@@ -50,4 +50,8 @@ A escolha do SGBD ideal depende das necessidades específicas de cada projeto, l
 
 ## Modelagens Conceitual, Lógico e Físico
 
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset=" ">
+   <img alt=" " src="[YOUR-DEFAULT-IMAGE]( )">
+</picture>
 
