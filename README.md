@@ -124,7 +124,7 @@ Portanto:
 * A linguagem SQL é utilizada para criar as tabelas e estruturas do banco de dados.
 * Nessa etapa, a tecnologia assume grande importância, pois precisamos escolher as ferramentas e técnicas adequadas para implementar o banco de dados de forma eficiente e segura.
 
-### MER Modelo Entidade-Relacionamento
+### MER - Modelo Entidade-Relacionamento
 
 No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é uma ferramenta fundamental para a modelagem conceitual de dados. Ele serve para **representar de forma gráfica e abstrata** como os dados se relacionam no mundo real, facilitando a compreensão e o planejamento da estrutura de um banco de dados.
 
@@ -135,7 +135,14 @@ No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é u
    * Entidade fraca: ao contrário das entidades fortes, as fracas são aquelas que dependem de outras entidades para existirem, pois individualmente elas não fazem sentido.
 
 
-* **Atributos:** Representam as características das entidades, como nome, endereço, preço, data, etc.
+* **Atributos:** Representam as características das entidades, como nome, endereço, preço, data, etc. Podemos dizer ainda que eles são as colunas da tabela, já que cada atributo se atém ao armazenamento de uma informação específica. Veja que existe atributo simples e multivalorado. Por exemplo, no caso de uma entidade chamada Alunos, cada registro terá o nome de um aluno. Os atributos multivalorados são aqueles que suportam vários registros. Eles são a solução do problema quando, por exemplo, têm-se vários telefones para um aluno. Já os atributos compostos nos permitem indicar um atributo que pode ser dividido em outros. Por exemplo, no caso de um endereço, pode-se dividi-lo em rua, cidade, estado e CEP.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana02/blob/main/imgs/tipos%20de%20atributos.png">
+   <img alt="Tipo de Atributos" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/tipos%20de%20atributos.png)">
+</picture>
+
+
 * **Relacionamentos:** Representam as ligações entre as entidades, definindo como elas se relacionam entre si.
 
 **Para que serve o MER:**
@@ -144,12 +151,6 @@ No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é u
 * **Identificar falhas e redundâncias:** Ao visualizar o MER, é possível identificar facilmente falhas no modelo, como redundâncias de dados e inconsistências.
 * **Comunicar o modelo de dados:** O MER serve como uma ferramenta de comunicação eficaz para compartilhar o modelo de dados com diferentes stakeholders, como analistas, desenvolvedores e usuários finais.
 * **Facilitar o desenvolvimento do banco de dados:** Um MER bem elaborado facilita o processo de desenvolvimento do banco de dados, pois fornece uma base sólida para a criação das tabelas, relacionamentos e consultas SQL.
-
-**Tipos de relacionamentos no MER:**
-
-* **1:1:** Uma entidade está associada a no máximo uma instância de outra entidade.
-* **1:N:** Uma entidade está associada a zero ou mais instâncias de outra entidade.
-* **N:N:** Uma entidade está associada a zero ou mais instâncias de outra entidade, e vice-versa.
 
 **Vantagens de usar o MER:**
 
@@ -168,3 +169,52 @@ Existem diversas ferramentas disponíveis para criar diagramas MER, desde ferram
 * **StarUML:** [https://staruml.io/](https://staruml.io/)
 * **Microsoft Visio:** [https://www.microsoft.com/en-us/store/collections/visio/pc](https://www.microsoft.com/en-us/store/collections/visio/pc)
 
+
+**MER e a Cardinalidade**
+
+Os atributos também podem possuir uma cardinalidade que define quantos valores deste atributo podem ser associados a uma ocorrência de entidade/relacionamento a qual ele pertence.
+
+No universo dos bancos de dados, a cardinalidade de um atributo define a **quantidade mínima e máxima de valores** que um atributo pode ter para cada ocorrência da entidade à qual ele pertence. Essa característica crucial determina as **regras de relacionamento** entre as entidades e garante a **integridade e consistência dos dados**.
+
+**Visualizando a Cardinalidade:**
+
+Geralmente, a cardinalidade é representada por uma notação composta por dois números separados por vírgula, onde:
+
+* **O primeiro número indica a cardinalidade mínima:** Quantidade mínima de valores que o atributo **deve** ter.
+* **O segundo número indica a cardinalidade máxima:** Quantidade máxima de valores que o atributo **pode** ter.
+
+**Tipos de Cardinalidade:**
+
+1. **1:1 (Um para Um):**
+
+   * **Descrição:** Um atributo só pode ter **no máximo um valor** para cada ocorrência da entidade.
+   * **Exemplos:**
+      * **CPF:** Um cliente só pode ter um CPF.
+      * **Código de Produto:** Um produto só pode ter um código único.
+
+2. **1:N (Um para Muitos):**
+
+   * **Descrição:** Um atributo pode ter **zero ou mais valores** para cada ocorrência da entidade.
+   * **Exemplos:**
+      * **Pedidos:** Um cliente pode ter vários pedidos.
+      * **Itens do Pedido:** Um pedido pode ter vários itens.
+
+3. **N:1 (Muitos para Um):**
+
+   * **Descrição:** Um atributo **deve** ter **no máximo um valor** para cada ocorrência da entidade.
+   * **Exemplos:**
+      * **Categoria:** Um produto só pode pertencer a uma única categoria.
+      * **Endereço:** Um funcionário só pode ter um endereço principal.
+
+4. **N:N (Muitos para Muitos):**
+
+   * **Descrição:** Um atributo pode ter **zero ou mais valores** para cada ocorrência da entidade, e vice-versa.
+   * **Exemplos:**
+      * **Autores e Livros:** Um autor pode escrever vários livros, e um livro pode ter vários autores.
+      * **Alunos e Turmas:** Um aluno pode estar matriculado em várias turmas, e uma turma pode ter vários alunos.
+
+**Importância da Cardinalidade:**
+
+* **Garante a integridade dos dados:** A cardinalidade define as regras de relacionamento entre as entidades, evitando inconsistências e dados inválidos.
+* **Otimiza o desempenho do banco de dados:** A escolha correta da cardinalidade pode influenciar na performance das consultas e na eficiência do armazenamento dos dados.
+* **Facilita a modelagem do banco de dados:** A cardinalidade ajuda a estruturar o modelo de dados de forma clara e organizada, facilitando a compreensão e a manutenção do banco de dados.
