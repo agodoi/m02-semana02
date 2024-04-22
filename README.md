@@ -75,6 +75,8 @@ Trata-se de um rascunho inicial do banco de dados, feito sob a ótica do usuári
 
 Uma das técnicas mais usadas é a abordagem entidade-relacionamento, que utiliza diagramas para representar as entidades (coisas que se quer guardar como informações, como clientes ou produtos), seus atributos (características das entidades) e como elas se relacionam (por exemplo, um cliente pode ter vários pedidos).
 
+**Uma relação é na veradade uma tabela**. Relacionamento são conexões entre tabelas.
+
 Portanto:
 
 * A modelagem conceitual é como um rascunho do banco de dados, onde definimos o que queremos guardar e como as informações se relacionam.
@@ -218,3 +220,18 @@ Geralmente, a cardinalidade é representada por uma notação composta por dois 
 * **Garante a integridade dos dados:** A cardinalidade define as regras de relacionamento entre as entidades, evitando inconsistências e dados inválidos.
 * **Otimiza o desempenho do banco de dados:** A escolha correta da cardinalidade pode influenciar na performance das consultas e na eficiência do armazenamento dos dados.
 * **Facilita a modelagem do banco de dados:** A cardinalidade ajuda a estruturar o modelo de dados de forma clara e organizada, facilitando a compreensão e a manutenção do banco de dados.
+
+### Chave Primária e Estrangeira
+
+1. **Chave Primária:**
+   - Uma chave primária é um atributo ou conjunto de atributos em uma tabela que identifica exclusivamente cada registro na tabela.
+   - Geralmente, é uma coluna definida como única e não nula.
+   - Cada tabela em um banco de dados relacional deve ter uma chave primária para garantir a unicidade e a identificação única de cada linha.
+
+2. **Chave Estrangeira:**
+   - Uma chave estrangeira é um campo em uma tabela que estabelece uma relação com a chave primária de outra tabela.
+   - Ela cria um vínculo entre duas tabelas, permitindo que os dados em uma tabela se relacionem aos dados em outra tabela.
+   - A chave estrangeira geralmente faz referência à chave primária de outra tabela, mas também pode fazer referência a uma chave única.
+   - Ela é usada para impor integridade referencial, garantindo que cada valor na coluna de chave estrangeira exista na coluna de chave primária correspondente na tabela referenciada.
+
+Em suma, a chave primária identifica exclusivamente cada registro em uma tabela, enquanto a chave estrangeira estabelece uma relação entre duas tabelas, referenciando a chave primária (ou uma chave única) de outra tabela.
