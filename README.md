@@ -243,6 +243,11 @@ Acessar o livro 9788502200463 via Sophia: [https://integrada.minhabiblioteca.com
 
 ## Desafio do Dia
 
-Cada grupo deve elaborar uma consulta simples de SQL na linguagem com duas tabelas, usando chave uma primária e a uma estrangeira.
+Você foi designado para desenvolver um banco de dados para cadastrar funcionários da empresa DELL. Você precisa cadastrar o CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
+
+Elabore uma MER que modele seu projeto, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/)
+
+
+DERque possui funcionários Cada grupo deve elaborar uma consulta simples de SQL na linguagem com duas tabelas, usando chave uma primária e a uma estrangeira.
 
 O grupo deve apresentar seu exemplo para a sala em 5min.
