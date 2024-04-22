@@ -45,3 +45,5 @@ Atualmente, existem diversos SGBDs disponíveis no mercado, cada um com suas car
 A escolha do SGBD ideal depende das necessidades específicas de cada projeto, levando em consideração fatores como tipo de dados, volume de dados, desempenho, segurança, escalabilidade, custo e compatibilidade com outras ferramentas.
 
 É importante avaliar cuidadosamente as necessidades do projeto antes de escolher um SGBD, considerando fatores como tipo de dados, volume de dados, desempenho, segurança, escalabilidade, custo e compatibilidade com outras ferramentas.
+
+### Como vamos usar o PostgreSQL, o seu projeto estará no tipo de banco **RELACIONAL**.
