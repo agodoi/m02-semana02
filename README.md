@@ -50,8 +50,66 @@ A escolha do SGBD ideal depende das necessidades específicas de cada projeto, l
 
 ## Modelagens Conceitual, Lógico e Físico
 
+Para que não haja retrabalho, recomenda-se seguir os seguintes passos para montar seu banco de dados, conforme mostra a figura.
+
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png">
-   <img alt=" " src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png)">
+   <img alt="Tipo de Modelagens" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/modelagens.png)">
 </picture>
 
+
+### Identificação do problema (levantamento de requisitos)
+
+Nesta etapa, é realizado um estudo detalhado das atividades em questão. Quando não há conhecimento prévio sobre o negócio, entrevistas podem levantar informações relevantes sobre as necessidades dos futuros usuários. Os administradores de dados se reúnem com os usuários para entender e documentar seus requisitos.
+
+### Modelagem Conceitual
+
+Trata-se de um rascunho inicial do banco de dados, feito sob a ótica do usuário que cria os dados. Nessa etapa, definimos como os dados se relacionam e como serão armazenados, sem nos preocupar com a implementação no sistema. 
+
+Uma das técnicas mais usadas é a abordagem entidade-relacionamento, que utiliza diagramas para representar as entidades (coisas que se quer guardar como informações, como clientes ou produtos), seus atributos (características das entidades) e como elas se relacionam (por exemplo, um cliente pode ter vários pedidos).
+
+Portanto:
+
+* A modelagem conceitual é como um rascunho do banco de dados, onde definimos o que queremos guardar e como as informações se relacionam.
+* Essa etapa é importante porque nos permite ter uma visão geral do banco de dados antes de implementá-lo no sistema.
+* Ao fazer a modelagem conceitual, pensamos sob a ótica do usuário que cria os dados, ou seja, definimos como ele vai ver e usar as informações.
+* É importante levar em consideração alguns fatores técnicos para que a implementação do banco de dados seja eficiente, mas o foco principal nessa etapa é na visão do usuário.
+* A modelagem conceitual define como os dados serão armazenados e relacionados, mas não se preocupa com os detalhes de como isso será feito no sistema.
+* Uma das técnicas mais utilizadas para fazer a modelagem conceitual é a abordagem entidade-relacionamento (MER).
+* A MER utiliza diagramas para representar as entidades, seus atributos e seus relacionamentos.
+* Peter Chen foi o responsável por criar a notação MER em 1976, que é utilizada até hoje para modelar dados em ambientes relacionais.
+
+### Modelam Lógica
+
+É a etapa onde detalhamos como o banco de dados será realmente implementado, escolhendo um tipo de banco de dados específico (como **PostgradeSQL**, Microsoft SQL Server, Oracle ou MySQL) e definindo como os dados serão armazenados e acessados nesse sistema. 
+
+É importante fazer essa etapa depois de já ter definido o que queremos guardar e como as informações se relacionam na modelagem conceitual. Pular a modelagem conceitual pode trazer problemas no futuro, pois fica mais difícil garantir que todos os requisitos do projeto sejam atendidos corretamente.
+
+Portanto:
+
+* A modelagem lógica é a etapa onde detalhamos como o banco de dados será implementado na prática.
+* Nessa etapa, escolhemos um tipo de banco de dados específico, como SQL Server, Oracle ou MySQL.
+* Cada tipo de banco de dados tem suas próprias características e formas de armazenar e acessar os dados.
+* É importante definir como os dados serão armazenados e acessados no banco de dados escolhido.
+* A modelagem lógica deve ser feita depois que a modelagem conceitual já estiver concluída.
+* A modelagem conceitual define o que queremos guardar e como as informações se relacionam, enquanto a modelagem lógica define como isso será implementado no sistema.
+* Pular a modelagem conceitual pode trazer problemas no futuro, pois fica mais difícil garantir que todos os requisitos do projeto sejam atendidos corretamente.
+* Ao fazer a modelagem conceitual, já pensamos em como os dados serão armazenados e acessados, o que facilita a modelagem lógica e evita problemas futuros.
+
+### Modelagem Física
+
+É a última etapa da modelagem de dados, onde definimos os detalhes técnicos de como o banco de dados será armazenado e acessado no sistema. Nessa etapa, escolhemos os tipos de dados que serão usados para cada campo, criamos as tabelas e relacionamentos entre elas, definimos índices para otimizar o acesso aos dados e implementamos as medidas de segurança e backup. 
+
+A modelagem física é feita com base no modelo lógico e utiliza a linguagem SQL para criar as tabelas e estruturas do banco de dados.
+
+Portanto:
+
+* A modelagem física é a etapa onde definimos os detalhes técnicos de como o banco de dados será implementado no sistema.
+* Nessa etapa, escolhemos os tipos de dados que serão usados para cada campo, como texto, número, data, etc.
+* Criamos as tabelas para armazenar os dados e definimos os relacionamentos entre elas.
+* Definimos índices para otimizar o acesso aos dados, o que significa que o sistema poderá encontrar as informações mais rapidamente.
+* Implementamos as medidas de segurança para proteger os dados contra acessos não autorizados e perdas.
+* Criamos um plano de backup para garantir que os dados possam ser recuperados em caso de falhas.
+* A modelagem física é feita com base no modelo lógico, que define o que queremos guardar e como as informações se relacionam.
+* A linguagem SQL é utilizada para criar as tabelas e estruturas do banco de dados.
+* Nessa etapa, a tecnologia assume grande importância, pois precisamos escolher as ferramentas e técnicas adequadas para implementar o banco de dados de forma eficiente e segura.
