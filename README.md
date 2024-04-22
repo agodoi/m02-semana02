@@ -31,12 +31,12 @@ Os SGBDs são ferramentas essenciais para diversas aplicações, desde sistemas 
 
 Atualmente, existem diversos SGBDs disponíveis no mercado, cada um com suas características e funcionalidades específicas. Alguns dos SGBDs mais populares incluem:
 
-* **SGBDs relacionais:**
+* **SGBDs relacionais [organização em tabelas]:**
     * **MySQL:** Um SGBD open-source muito popular, utilizado em diversos sites e aplicações da web.
     * **PostgreSQL:** Um SGBD open-source robusto e escalável, com foco em segurança e confiabilidade.
     * **Oracle Database:** Um SGBD comercial poderoso e escalável, utilizado em grandes empresas e organizações.
     * **Microsoft SQL Server:** Um SGBD comercial popular no ambiente Windows, com foco em integração com outras ferramentas da Microsoft.
-* **SGBDs NoSQL:**
+* **SGBDs NoSQL [organização em documentos]:**
     * **MongoDB:** Um banco de dados NoSQL document-oriented, ideal para armazenar e consultar dados não estruturados.
     * **Cassandra:** Um banco de dados NoSQL distribuído, projetado para alta disponibilidade e escalabilidade.
     * **Redis:** Um banco de dados NoSQL em memória, ideal para armazenar dados que precisam ser acessados ​​rapidamente.
