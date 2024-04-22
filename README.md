@@ -235,3 +235,14 @@ Geralmente, a cardinalidade é representada por uma notação composta por dois 
    - Ela é usada para impor integridade referencial, garantindo que cada valor na coluna de chave estrangeira exista na coluna de chave primária correspondente na tabela referenciada.
 
 Em suma, a chave primária identifica exclusivamente cada registro em uma tabela, enquanto a chave estrangeira estabelece uma relação entre duas tabelas, referenciando a chave primária (ou uma chave única) de outra tabela.
+
+## Exemplos de Banco de Dados
+
+Acessar o livro 9788502200463 via Sophia: (https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68)[https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68]
+
+
+## Desafio do Dia
+
+Cada grupo deve elaborar uma consulta simples de SQL na linguagem com duas tabelas, usando chave uma primária e a uma estrangeira.
+
+O grupo deve apresentar seu exemplo para a sala em 5min.
