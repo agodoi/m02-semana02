@@ -2,6 +2,13 @@
 
 Vamos criar uma aplicação web completa discutindo os principais conceitos envolvidos nos bancos de dados, como as modelagens (que serão cobradas nos artefatos e ponderadas) e iniciar a escrita de consultas aos bancos através de SQL.
 
+# Tecnologias do Módulo
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m02-semana02/blob/main/imgs/TecnologiasM02.png">
+   <img alt="Tecnologias Módulo 02" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m02-semana02/blob/main/imgs/TecnologiasM02.png)">
+</picture>
+
 # O que é um Sistema de Gerenciamento de Banco de Dados (SGBD)?
 
 Um **Sistema de Gerenciamento de Banco de Dados (SGBD)**, também conhecido como **DBMS** (do inglês *Data Base Management System*), é um software que organiza, armazena, recupera e gerencia grandes volumes de dados de forma eficiente e segura. Ele atua como um intermediário entre os usuários e os dados, fornecendo uma interface para acessar, manipular e consultar as informações de forma organizada.
@@ -78,6 +85,9 @@ Portanto:
 * Uma das técnicas mais utilizadas para fazer a modelagem conceitual é a abordagem entidade-relacionamento (MER).
 * A MER utiliza diagramas para representar as entidades, seus atributos e seus relacionamentos.
 * Peter Chen foi o responsável por criar a notação MER em 1976, que é utilizada até hoje para modelar dados em ambientes relacionais.
+
+**Importante destacar que o modelo conceitual não é associado e não faz parte de nenhum SGBD. O modelo conceitual é útil para identificar e analisar se as regras de negócio estão bem definidas e, dessa forma, evitar erros futuros.**
+ 
 
 ### Modelam Lógica
 
