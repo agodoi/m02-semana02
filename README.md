@@ -1,13 +1,13 @@
 # Horário de Atendimento do Professor
 
-* Terças e quintas das 8h às 16h, exceto em janelas que reunião extraordinárias acontecem.
+* Terças e quintas das 8h às 16h, exceto em janelas nas quais reunião extraordinárias acontecem. As janelas são de até 1h.
 * Demais dias da semana, estou no Slack, com tempo de respostas no mesmo dia.
 
 # Horário de Atendimento do Monitor
 
-Segunda: 8h30 às 10h (1h30 de atendimento)
-Quarta: 8h30 às 10h (1h30 de atendimento)
-Sexta: 8h30 às 9h30 (1h de atendimento)
+* Segunda: 8h30 às 10h
+* Quarta: 8h30 às 10h
+* Sexta: 8h30 às 9h30
 
 # Banco de Dados I - Conceitos, Modelos e SQL Básico
 
