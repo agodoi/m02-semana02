@@ -241,13 +241,52 @@ Em suma, a chave primária identifica exclusivamente cada registro em uma tabela
 Acessar o livro 9788502200463 via Sophia: [https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68](https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68)
 
 
-## Desafio do Dia
+## Atividade do Dia
 
-Você foi designado para desenvolver um banco de dados para cadastrar funcionários da empresa DELL. Você precisa cadastrar o CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
+Seu grupo foi designado para desenvolver um banco de dados para cadastrar funcionários da empresa DELL. Você precisa cadastrar o CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
 
-Elabore uma MER que modele seu projeto, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/)
+Elabore uma MER que modele seu projeto, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/). O grupo terá até 5min.
 
+## Desafio
 
-DERque possui funcionários Cada grupo deve elaborar uma consulta simples de SQL na linguagem com duas tabelas, usando chave uma primária e a uma estrangeira.
+Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no DBeaver.
 
-O grupo deve apresentar seu exemplo para a sala em 5min.
+### Passo 1: Baixar e Instalar o DBeaver
+
+1. Visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
+2. Siga as instruções de instalação para instalar o DBeaver no seu computador.
+
+### Passo 2: Conectar ao Banco de Dados
+
+1. Abra o DBeaver após a instalação.
+2. Na tela inicial, clique em "Database" e depois em "New Database Connection".
+
+### Passo 3: Configurar a Conexão ao Banco de Dados SQLite
+
+1. No menu suspenso "Driver", escolha "SQLite".
+2. Na seção "Database File", clique em "Browse" e selecione o arquivo SQLite (.sqlite) onde você deseja criar o banco de dados. Se não tiver um arquivo, pode criar um novo clicando em "Create New Database".
+3. Clique em "Test Connection" para verificar se a conexão foi estabelecida com sucesso e depois em "Finish".
+
+### Passo 4: Criar o Esquema do Banco de Dados
+
+1. Com a conexão estabelecida, expanda o nó do banco de dados no painel de navegação.
+2. Clique com o botão direito do mouse no nó "Tables" e selecione "Create New Table".
+3. Defina o nome da tabela como "Funcionario" e adicione as colunas conforme o esquema que definimos anteriormente: CPF (VARCHAR), Nome (VARCHAR), Sobrenome (VARCHAR), Genero (CHAR), Idade (INT), NivelID (INT) e SupervisorID (VARCHAR).
+4. Defina as chaves primárias e estrangeiras conforme necessário. Clique em "OK" para criar a tabela.
+
+### Passo 5: Inserir Dados na Tabela
+
+1. Com a tabela "Funcionario" selecionada, clique com o botão direito do mouse e selecione "Edit Data" -> "Insert Row".
+2. Insira os dados dos funcionários conforme necessário e clique em "OK" para salvar as alterações.
+
+### Passo 6: Executar Consultas SQL
+
+1. Para executar consultas SQL, vá para a aba "SQL Editor" no canto inferior esquerdo.
+2. Digite sua consulta SQL na área de edição e clique no botão "Execute SQL Statement" (ícone de triângulo verde) para executar a consulta.
+3. Você verá os resultados da consulta na parte inferior da tela.
+
+### Passo 7: Gerenciar o Banco de Dados
+
+1. Você pode gerenciar o banco de dados, tabelas, índices, etc., usando as opções disponíveis no painel de navegação e na barra de ferramentas do DBeaver.
+
+Espero que este guia seja útil para você começar a simular um banco de dados usando o DBeaver!
