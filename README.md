@@ -238,7 +238,7 @@ Em suma, a chave primária identifica exclusivamente cada registro em uma tabela
 
 ## Exemplos de Banco de Dados
 
-Acessar o livro 9788502200463 via Sophia: (https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68)[https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68]
+Acessar o livro 9788502200463 via Sophia: [https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68](https://integrada.minhabiblioteca.com.br/reader/books/9788502200463/pageid/68)
 
 
 ## Desafio do Dia
