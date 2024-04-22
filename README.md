@@ -130,7 +130,11 @@ No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é u
 
 **O que o MER representa:**
 
-* **Entidades:** Representam os objetos principais do domínio que queremos modelar, como clientes, produtos, pedidos, etc.
+* **Entidades:** Representam os objetos principais do domínio que queremos modelar, como clientes, produtos, pedidos, etc. É representada em um modelo conceitual por meio de um retângulo, com o nome da tabela ao centro dele. Essa entidade terá uma ou várias informações. Cada ocorrência dessas informações é chamada de instância e vai representar um conjunto exclusivo dos dados.
+   * Entidade forte: são aquelas cuja existência não depende de outras entidades, ou seja, elas já possuem total sentido de existir. Em um sistema de notas, a entidade Alunos, por exemplo, independe de quaisquer outras para existir.
+   * Entidade fraca: ao contrário das entidades fortes, as fracas são aquelas que dependem de outras entidades para existirem, pois individualmente elas não fazem sentido.
+
+
 * **Atributos:** Representam as características das entidades, como nome, endereço, preço, data, etc.
 * **Relacionamentos:** Representam as ligações entre as entidades, definindo como elas se relacionam entre si.
 
