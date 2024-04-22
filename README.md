@@ -75,7 +75,7 @@ Trata-se de um rascunho inicial do banco de dados, feito sob a ótica do usuári
 
 Uma das técnicas mais usadas é a abordagem entidade-relacionamento, que utiliza diagramas para representar as entidades (coisas que se quer guardar como informações, como clientes ou produtos), seus atributos (características das entidades) e como elas se relacionam (por exemplo, um cliente pode ter vários pedidos).
 
-**Uma relação é na veradade uma tabela**. Relacionamento são conexões entre tabelas.
+**Uma relação é na veradade uma tabela**. Relacionamento são conexões entre tabelas. Contudo, tabela é um termo de mercado, enquanto relação é um termo acadêmico.
 
 Portanto:
 
