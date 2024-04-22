@@ -123,3 +123,44 @@ Portanto:
 * A modelagem física é feita com base no modelo lógico, que define o que queremos guardar e como as informações se relacionam.
 * A linguagem SQL é utilizada para criar as tabelas e estruturas do banco de dados.
 * Nessa etapa, a tecnologia assume grande importância, pois precisamos escolher as ferramentas e técnicas adequadas para implementar o banco de dados de forma eficiente e segura.
+
+### MER Modelo Entidade-Relacionamento
+
+No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é uma ferramenta fundamental para a modelagem conceitual de dados. Ele serve para **representar de forma gráfica e abstrata** como os dados se relacionam no mundo real, facilitando a compreensão e o planejamento da estrutura de um banco de dados.
+
+**O que o MER representa:**
+
+* **Entidades:** Representam os objetos principais do domínio que queremos modelar, como clientes, produtos, pedidos, etc.
+* **Atributos:** Representam as características das entidades, como nome, endereço, preço, data, etc.
+* **Relacionamentos:** Representam as ligações entre as entidades, definindo como elas se relacionam entre si.
+
+**Para que serve o MER:**
+
+* **Visualizar a estrutura do banco de dados:** O MER fornece uma visão gráfica clara e intuitiva da estrutura do banco de dados, facilitando a compreensão e a análise do modelo.
+* **Identificar falhas e redundâncias:** Ao visualizar o MER, é possível identificar facilmente falhas no modelo, como redundâncias de dados e inconsistências.
+* **Comunicar o modelo de dados:** O MER serve como uma ferramenta de comunicação eficaz para compartilhar o modelo de dados com diferentes stakeholders, como analistas, desenvolvedores e usuários finais.
+* **Facilitar o desenvolvimento do banco de dados:** Um MER bem elaborado facilita o processo de desenvolvimento do banco de dados, pois fornece uma base sólida para a criação das tabelas, relacionamentos e consultas SQL.
+
+**Tipos de relacionamentos no MER:**
+
+* **1:1:** Uma entidade está associada a no máximo uma instância de outra entidade.
+* **1:N:** Uma entidade está associada a zero ou mais instâncias de outra entidade.
+* **N:N:** Uma entidade está associada a zero ou mais instâncias de outra entidade, e vice-versa.
+
+**Vantagens de usar o MER:**
+
+* **Melhora a compreensão do modelo de dados:** O MER torna o modelo de dados mais intuitivo e fácil de entender, facilitando a comunicação entre diferentes stakeholders.
+* **Reduz erros e redundâncias:** Ao visualizar o MER, é possível identificar facilmente falhas no modelo, como redundâncias de dados e inconsistências.
+* **Facilita o desenvolvimento e a manutenção do banco de dados:** Um MER bem elaborado facilita o processo de desenvolvimento do banco de dados e sua posterior manutenção.
+* **Melhora a qualidade do banco de dados:** Um MER bem estruturado contribui para a criação de um banco de dados mais eficiente, confiável e seguro.
+
+**Ferramentas para criar MER:**
+
+Existem diversas ferramentas disponíveis para criar diagramas MER, desde ferramentas online gratuitas até softwares pagos mais completos. Algumas opções populares incluem:
+
+* **Lucidchart:** [https://www.lucidchart.com/pages/](https://www.lucidchart.com/pages/)
+* **Draw.io:** [https://app.diagrams.net/](https://app.diagrams.net/)
+* **Visual Paradigm:** [https://www.visual-paradigm.com/](https://www.visual-paradigm.com/)
+* **StarUML:** [https://staruml.io/](https://staruml.io/)
+* **Microsoft Visio:** [https://www.microsoft.com/en-us/store/collections/visio/pc](https://www.microsoft.com/en-us/store/collections/visio/pc)
+
