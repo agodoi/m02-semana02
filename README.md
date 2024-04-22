@@ -158,8 +158,8 @@ No universo dos bancos de dados, o **MER (Modelo Entidade-Relacionamento)** é u
 
 Existem diversas ferramentas disponíveis para criar diagramas MER, desde ferramentas online gratuitas até softwares pagos mais completos. Algumas opções populares incluem:
 
-* **Lucidchart:** [https://www.lucidchart.com/pages/](https://www.lucidchart.com/pages/)
 * **Draw.io:** [https://app.diagrams.net/](https://app.diagrams.net/)
+* **Lucidchart:** [https://www.lucidchart.com/pages/](https://www.lucidchart.com/pages/)
 * **Visual Paradigm:** [https://www.visual-paradigm.com/](https://www.visual-paradigm.com/)
 * **StarUML:** [https://staruml.io/](https://staruml.io/)
 * **Microsoft Visio:** [https://www.microsoft.com/en-us/store/collections/visio/pc](https://www.microsoft.com/en-us/store/collections/visio/pc)
