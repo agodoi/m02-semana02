@@ -332,5 +332,20 @@ PGPASSWORD=RGeW7S2AkMUEI3gZ1 psql -h dpg-cos73bflb6g-a.oregon-postgres.render.co
 * Bancos de dados
    * Schemas
       * public
-         * Tabelas  
+         * Tabelas (quando chegar aqui, você vai ver que está vazio, não tem nada! Normal até agora.)
+       
+3.14) Clique com o botão direito do mouse sobre **public** que está vazia e selecionar **Editor SQL** e depois **Abrir script SQL**. Nesse momento, vamos criar um pequeno script SQL que criar uma simples tabela SQL. Cole esse script lá:
+
+```
+create table users(
+id SERIAL primary key,
+primeiro_nome VARCHAR(50) not null,
+ultimo_nome VARCHAR(50) not null,
+email VARCHAR(100) not null,
+senha VARCHAR(100) not null,
+created_at TIMESTAMP default NOW(),
+update_at TIMESTAMP default NOW()
+);
+```
+
 
