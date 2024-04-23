@@ -348,4 +348,18 @@ update_at TIMESTAMP default NOW()
 );
 ```
 
+3.15) Para rodar esse script, clique num **play laranja** minúsculo que tem logo na primeira linha do **create**. O resultado será uma tabela criada na parte de baixo da sua tela. Caso apareça algum erro, corrija no código-fonte da etapa 3.14.
+
+3.16) Clique com o botão direito em **Tabelas** da etapa 3.13 e selecione **atualizar** e daí vai aparecer a tabela **users** que você acabou de criar. E dando 2 cliques na tabela **users**, você vai ver sua primeira tabela criada, seu primeiro banco de dados !!!! Chic! Vai estar tudo vazio, sim! Mas está criada.
+
+3.17) Vamos dar um **INSERT** na sua tabela, que significa, entrar com dados novos. Para isso, volte no **Script SQL** da etapa 3.14, dê um enter no final da última linha e adicione essas novas linhas
+
+```
+insert into users (primeiro_nome, ultimo_nome, email, senha)
+values ('Fusca', 'Herbie', 'fusca.herbie@gmail.com', 'inteli123' );
+```
+
+Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague as linhas do CREATE TABLE e só fique com o INSERT.
+
+
 
