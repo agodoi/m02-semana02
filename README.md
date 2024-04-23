@@ -260,12 +260,42 @@ Elabore uma MER que modele seu projeto, explicando os relacionamentos e desenhe 
 
 ## Desafio
 
-Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no DBeaver.
+Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no Render e DBeaver.
 
 ### Passo 1: Baixar e Instalar o DBeaver
 
 1. Visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
 2. Siga as instruções de instalação para instalar o DBeaver no seu computador.
+
+
+### Passo 2: Configurando o Render
+
+2.1) Fala o login usando o Google no [https://dashboard.render.com/](https://dashboard.render.com/)
+
+2.2) Clique no botão azul NEW que fica na parte superior do Render.
+
+2.3) Selecione o PostgreSQL.
+
+2.4) No campo **Name** coloque o nome do seu grupo. Exemplo, **Grupo-1**.
+
+2.5) Os demais grupos você deixa como está, não preencha.
+
+2.6) Em **PostgreeSQL Version** você seleciona sempre a penúltima versão para não dar problema nos drivers. A penúltima versão é sempre a mais moderna e estável. No momento, você deve escolher a **15**.
+
+2.7) Em **DataDog** deixa em branco.
+
+2.8) Pegue a versão **Free** por 90 dias, que serão suficientes para fazer esse projeto.
+
+2.9) Clique no botão azul **Create Database**. Caso apareça algum pop up, clique em **Close**, porque são apenas dicas.
+
+2.10) Fica de olho na informação **Status** e **Storage** que ficam no meio da sua tela. No Status vai aparecer **Available** e no Storage vai aparecer **Fetching...**. Isso é normal. Quando tiver tudo pronto, o Storage fica em **4.77% used of 1.0 GiB**.
+
+2.11) Clica no botão **Connect** que fica no canto direito superior e clica em **External Connection**, pois vamos fazer uma conexão externa com o seu banco Render usando o seu computador e o DBeaver. O DBeaver é um programa multiplataforma, que tem por objetivo conectar e manipular vários tipos de banco de dados. 
+
+2.12) Copie o link que está no campo **External Database URL Connect from services outside of Render** algo do tipo **postgres://bdgodoi_user:RGeW7S2AkMUEI3gZ1@dpg-cojpieu3e1lb6g-a.oregon-postgres.render.com/bdgodoi** (quebrei esse link por motivos de segurança).
+
+
+
 
 ### Passo 2: Conectar ao Banco de Dados
 
