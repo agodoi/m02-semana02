@@ -254,18 +254,13 @@ Acessar o livro 9788502200463 via Sophia: [https://integrada.minhabiblioteca.com
 
 ## Atividade do Dia
 
-Seu grupo foi designado para desenvolver um banco de dados para cadastrar funcionários da empresa DELL. Você precisa cadastrar o CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
+Seu grupo foi designado para desenvolver um banco de dados para cadastrar funcionários da empresa DELL. Você precisa cadastrar o primeiro_nome, ultimo_nome, email e senha.
 
-Elabore uma MER que modele seu projeto, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/). O grupo terá até 5min.
-
-## Desafio
-
-Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no Render e DBeaver.
 
 ### Passo 1: Baixar e Instalar o DBeaver
 
-1. Visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
-2. Siga as instruções de instalação para instalar o DBeaver no seu computador.
+1.1) Visite o site oficial do DBeaver (https://dbeaver.io/) e faça o download do instalador compatível com o seu sistema operacional (Windows, macOS ou Linux).
+1.2) Siga as instruções de instalação para instalar o DBeaver no seu computador.
 
 
 ### Passo 2: Configurando o Render
@@ -362,4 +357,10 @@ values ('Fusca', 'Herbie', 'fusca.herbie@gmail.com', 'inteli123' );
 Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague as linhas do CREATE TABLE e só fique com o INSERT.
 
 
+### Exercício.
 
+Refaça todos as etapas mas agora criando um novo banco de dados que tenha CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
+
+### Desafio
+
+Elabore uma MER que modele esse último banco de dados, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/). O grupo que terminar, avise o professor para ganhar o um chocolate. Os 2 primeiros grupos ganharão.
