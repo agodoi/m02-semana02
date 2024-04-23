@@ -314,40 +314,23 @@ Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no R
 3.8) Volte no RENDER, na etapa 2.11 e copie o segundo link de conexão externa **PSQL Command Connect from the command line** e cole num arquivo TXT. Será uma coisa assim:
 PGPASSWORD=RGeW7S2AkMUEI3gZ1 psql -h dpg-cos73bflb6g-a.oregon-postgres.render.com -U bdgodoi_user bdgodoi
 
+3.9) Com a URL que acabou de pegar, separe os dados **senha** que é tudo que está após **PGPASSWORD** até o primeiro espaço vazio que é o mesmo que antes de **psql**. Separe o hostname do seu computador que é tudo que está após **h** até o **.com**. Separe o usuário que está após o **-U** e o nome do banco de dados que é tudo que está no final da URL. Então você precisa de uma tabela assim:
 
+* senha: RGeW7S2AkMUEI3gZ1
+* host: dpg-cos73bflb6g-a.oregon-postgres.render.com
+* usuário: bdgodoi_user
+* banco de dados: bdgodoi
 
+3.10) Voltando no DBeaver, e na mesma tela da etapa 3.4, você agora escolhe **Conecte usando host** e preencha com os dados que você acabou de coletar: senha, host, usuário e banco de dados.
 
-### Passo 2: Conectar ao Banco de Dados
+3.11) Teste a conexão clicando em **Testar conexão** para mais uma vez atualizar drivers. E nessa hora, vai dar bom na sua conexão. Você pode clicar quantas vezes quiser nesse botão para testar a conexão.
 
-1. Abra o DBeaver após a instalação.
-2. Na tela inicial, clique em "Database" e depois em "New Database Connection".
+3.12) Clique em **Concluir**
 
-### Passo 3: Configurar a Conexão ao Banco de Dados SQLite
+3.13) Agora você terá o seu banco de dados no menu vertical da esquerda, no campo **Navegador banco de dados**. Expanda os objetos clicando nas setinhas que estão ao lado de cada objeto. Você tem o **Bancos de dados**, **Administrar**, **Informações do sistema**. Expanda:
 
-1. No menu suspenso "Driver", escolha "SQLite".
-2. Na seção "Database File", clique em "Browse" e selecione o arquivo SQLite (.sqlite) onde você deseja criar o banco de dados. Se não tiver um arquivo, pode criar um novo clicando em "Create New Database".
-3. Clique em "Test Connection" para verificar se a conexão foi estabelecida com sucesso e depois em "Finish".
+* Bancos de dados
+   * Schemas
+      * public
+         * Tabelas  
 
-### Passo 4: Criar o Esquema do Banco de Dados
-
-1. Com a conexão estabelecida, expanda o nó do banco de dados no painel de navegação.
-2. Clique com o botão direito do mouse no nó "Tables" e selecione "Create New Table".
-3. Defina o nome da tabela como "Funcionario" e adicione as colunas conforme o esquema que definimos anteriormente: CPF (VARCHAR), Nome (VARCHAR), Sobrenome (VARCHAR), Genero (CHAR), Idade (INT), NivelID (INT) e SupervisorID (VARCHAR).
-4. Defina as chaves primárias e estrangeiras conforme necessário. Clique em "OK" para criar a tabela.
-
-### Passo 5: Inserir Dados na Tabela
-
-1. Com a tabela "Funcionario" selecionada, clique com o botão direito do mouse e selecione "Edit Data" -> "Insert Row".
-2. Insira os dados dos funcionários conforme necessário e clique em "OK" para salvar as alterações.
-
-### Passo 6: Executar Consultas SQL
-
-1. Para executar consultas SQL, vá para a aba "SQL Editor" no canto inferior esquerdo.
-2. Digite sua consulta SQL na área de edição e clique no botão "Execute SQL Statement" (ícone de triângulo verde) para executar a consulta.
-3. Você verá os resultados da consulta na parte inferior da tela.
-
-### Passo 7: Gerenciar o Banco de Dados
-
-1. Você pode gerenciar o banco de dados, tabelas, índices, etc., usando as opções disponíveis no painel de navegação e na barra de ferramentas do DBeaver.
-
-Espero que este guia seja útil para você começar a simular um banco de dados usando o DBeaver!
