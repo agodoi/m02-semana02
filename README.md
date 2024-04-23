@@ -292,7 +292,27 @@ Elabore os comandos SQL que gere esse banco de dados e tente implementá-lo no R
 
 2.11) Clica no botão **Connect** que fica no canto direito superior e clica em **External Connection**, pois vamos fazer uma conexão externa com o seu banco Render usando o seu computador e o DBeaver. O DBeaver é um programa multiplataforma, que tem por objetivo conectar e manipular vários tipos de banco de dados. 
 
-2.12) Copie o link que está no campo **External Database URL Connect from services outside of Render** algo do tipo **postgres://bdgodoi_user:RGeW7S2AkMUEI3gZ1@dpg-cojpieu3e1lb6g-a.oregon-postgres.render.com/bdgodoi** (quebrei esse link por motivos de segurança).
+2.12) Copie o link que está no campo **External Database URL Connect from services outside of Render** e cole num arquivo TXT aí temporariamente. O link que você vai copiar é algo do tipo **postgres://bdgodoi_user:RGeW7S2AkMUEI3gZ1@dpg-cojpieu3e1lb6g-a.oregon-postgres.render.com/bdgodoi** (quebrei esse link por motivos de segurança).
+
+
+### Passo 3: Configurando o DBeaver
+
+3.1) Inicialize o DBeaver. Teoricamente ele já deve ter sido instalado no autoestudos da semana 01.
+
+3.2) Vá no canto esquerdo superior e procure pelo ícone **Criar nova conexão**. É uma tomada azul com o sinal de +.
+
+3.3) Escolha o **PostgreeSQL** e clique em **Avançar**.
+
+3.4) Em **Servidor**, escolha o **Conecte usando URL** e cole aquele link da etapa 2.12
+
+3.5) Clique no botão **Testar conexão** para instalar drivers de primeira rodada. Esse botão **Testar conexão** está na parte inferior da atual tela.
+
+3.6) Vai aparecer uma tela solicitando **download**. Confirme o download, pois vão vir drivers novos. 
+
+3.7) Quando acabar o download, vai dar pau na sua conexão. Isso é normal, pois só usando a URL da etapa 2.12 para puxar drivers. Vamos resolver essa falha de conexão usando outra URL.
+
+3.8) Volte no RENDER, na etapa 2.11 e copie o segundo link de conexão externa **PSQL Command Connect from the command line** e cole num arquivo TXT. Será uma coisa assim:
+PGPASSWORD=RGeW7S2AkMUEI3gZ1 psql -h dpg-cos73bflb6g-a.oregon-postgres.render.com -U bdgodoi_user bdgodoi
 
 
 
