@@ -363,4 +363,4 @@ Refaça todos as etapas mas agora criando um novo banco de dados que tenha CPF, 
 
 ### Desafio
 
-Elabore uma MER que modele esse último banco de dados, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/). O grupo que terminar, avise o professor para ganhar o um chocolate. Os 2 primeiros grupos ganharão.
+Elabore uma MER que modele esse último banco de dados, explicando os relacionamentos e desenhe no [draw.io](https://app.diagrams.net/). O grupo que terminar, avise o professor. Os 2 primeiros grupos concorrerão à um chocolate. O grupo interessado apresenta o seu MER para uma votação.
