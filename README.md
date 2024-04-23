@@ -357,7 +357,7 @@ values ('Fusca', 'Herbie', 'fusca.herbie@gmail.com', 'inteli123' );
 Caso tenha um erro dizendo que você já possui o users, significa que você está tentando rodar novamente o CREATE TABLE e isso não é possível. Apague as linhas do CREATE TABLE e só fique com o INSERT.
 
 
-### Exercício.
+### Exercício
 
 Refaça todos as etapas mas agora criando um novo banco de dados que tenha CPF, nome, sobrenome, gênero e idade. Além disso, precisa definir qual o nível técnico de atuação de cada funcionário (nível 1, 2 e 3), substituto ou supervisor de área.
 
